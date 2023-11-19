@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="idioma_padrao">Idioma Padrão:</label>
+        <input type="text" name="idioma_padrao" required>
+
+        <label for="idioma_traduzido">Idioma Traduzido:</label>
+        <input type="text" name="idioma_traduzido" required>
+                
+        <input type="text" name="texto_a_traduzir" required>
+        
+        <button type="submit">Traduzir</button>
+    </form>
+    <div class="texto">{{ texto }}</div>
+</body>
+</html>
