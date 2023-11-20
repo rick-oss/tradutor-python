@@ -11,13 +11,12 @@
         <div class="formulario">
             <form method="POST">
                 <div class="campo">
-                    <label for="idioma_padrao">Idioma Padrão:</label>
-                    <input type="text" name="idioma_padrao" required>
-    
-                    <label for="idioma_traduzido">Idioma Traduzido:</label>
-                    <input type="text" name="idioma_traduzido" required>
-                </div>                       
-                <input type="text" class="texto_traduzir" name="texto_a_traduzir" required>               
+                    <input type="text" name="idioma_padrao" placeholder="Idioma Padrão:" required>   
+                    <input type="text" name="idioma_traduzido" placeholder="Idioma Traduzido:" required>
+                </div>   
+                <div class="campo-texto">
+                    <textarea name="texto_a_traduzir" required></textarea>   
+                </div>                              
                 <div class="btn">
                     <button type="submit">Traduzir</button>
                 </div>
