@@ -1,0 +1,47 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #282a40, #000a18);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border: 1px solid rgb(4, 84, 122);
+}
+
+.wrapper .formulario {
+    display: grid;
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid rgb(4, 84, 122);
+}
+
+.formulario form {
+    text-align: center;
+    border: 1px solid rgb(4, 84, 122);
+}
+
+.formulario .campo {
+    border: 1px solid rgb(4, 84, 122);
+}
+
+form .texto_traduzir {
+    width: 80%;
+    height: 80%;
+}
+
+form .btn {
+    width: 100%;
+    border: 1px solid rgb(4, 84, 122);
+}
+.wrapper .texto {
+    display: grid;
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid rgb(4, 84, 122);
+}
