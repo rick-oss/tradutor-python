@@ -10,19 +10,29 @@
     <div class="wrapper">
         <div class="formulario">
             <form method="POST">
-                <div class="campo">
-                    <input type="text" name="idioma_padrao" placeholder="Idioma Padrão:" required>   
-                    <input type="text" name="idioma_traduzido" placeholder="Idioma Traduzido:" required>
+                <div class="campo-input">
+                    <div class="campo">
+                        <label for="text">Idioma Padrão:</label>
+                        <input type="text" name="idioma_padrao" placeholder="EX.: en(english)" required> 
+                    </div>
+                    <div class="campo">
+                        <label for="text">Idioma Traduzido:</label>
+                        <input type="text" name="idioma_traduzido" placeholder="EX.: pt(portuguese)" required>  
+                    </div>
                 </div>   
                 <div class="campo-texto">
-                    <textarea name="texto_a_traduzir" required></textarea>   
+                    <div class="texto">
+                        <textarea name="texto_a_traduzir" required></textarea>  
+                    </div>
+                    <div class="texto">
+                        <textarea>{{ texto }}</textarea> 
+                    </div>
                 </div>                              
                 <div class="btn">
                     <button type="submit">Traduzir</button>
                 </div>
             </form>
         </div>
-        <div class="texto">{{ texto }}</div>
     </div>
 </body>
 </html>
