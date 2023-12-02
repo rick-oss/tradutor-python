@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="titulo">Tradutor</div>
         <div class="formulario">
             <form method="POST">
                 <div class="campo-input">
@@ -25,11 +26,11 @@
                         <textarea name="texto_a_traduzir" placeholder="Digitar Texto" required></textarea>  
                     </div>
                     <div class="texto">
-                        <textarea placeholder="Traduçao">{{ texto }}</textarea> 
+                        <textarea readonly style="user-select: contain;" placeholder="Traduçao">{{ texto }}</textarea> 
                     </div>
                 </div>                              
-                <div class="btn">
-                    <button type="submit">Traduzir</button>
+                <div class="botao">
+                    <button class="btn" type="submit">Traduzir</button>
                 </div>
             </form>
         </div>
