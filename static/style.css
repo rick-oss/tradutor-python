@@ -2,17 +2,32 @@ html,
 body {
     max-width: 100%;
     height: 100%;
-    padding: 5px;
     overflow: hidden;
-    background: linear-gradient(to bottom, #282a40, #000a18);
+    background: linear-gradient(to bottom, #020418, #000000);
+}
+
+/* Estilizaçao para navegadores que suportam a propriedade padrão */
+* {
+    scrollbar-width: none;
+    scrollbar-color: #2dbda5 #3451a0;
 }
 
 .wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    border: 1px solid rgb(4, 84, 122);
+    max-width: 100%;
+    height: 615px;
+    border: 1px solid #3451a0;
+    border-radius: 10px;
+}
+
+.wrapper .titulo {
+    max-width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px;
+    color: #3451a0;
+    border-bottom: 1px solid #3451a0;
 }
 
 .wrapper .formulario {
@@ -20,9 +35,19 @@ body {
     width: 100%;
     height: 500px;
     max-height: 100%;
-    padding: 20px;
     text-align: center;
-    border: 1px solid rgb(4, 84, 122);
+}
+
+.formulario .campo-input {
+    display: flex;
+    max-width: 100%;
+}
+
+.campo-input .campo {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
 }
 
 .campo label {
@@ -30,21 +55,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     font-style: italic;
-}
-
-.formulario .campo-input {
-    display: flex;
-    max-width: 100%;
-    padding: 20px;
-    border-bottom: 10px;
-    border: 1px solid rgb(4, 84, 122);
-}
-
-.campo-input .campo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border: 1px solid rgb(4, 84, 122);
+    color: #3451a0;
 }
 
 .campo input[type="text"] {
@@ -54,7 +65,8 @@ body {
     border-radius: 10px;
     outline: none;
     font-style: italic;
-    border: 1px solid #3451a0;
+    color: #2dbda5;
+    border: 2px solid #3451a0;
     background: linear-gradient(to left, #222436, #040e1b);
 }
 
@@ -75,15 +87,14 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    padding: 10px;
     overflow-x: hidden;
 }
 
 .campo-texto .texto {
-    display: flex;
-    justify-content: center;
     width: 100%;
-    border: 1px solid rgb(4, 84, 122);
+    display: flex;
+    padding: 5px;
+    justify-content: center;
 }
 
 .texto textarea {
@@ -97,8 +108,9 @@ body {
     word-wrap: break-word;
     resize: none;
     outline: none;
+    color: #2dbda5;
     background: linear-gradient(to top, #313346, #02132b);
-    border: 1px solid #3451a0;
+    border: 2px solid #3451a0;
 }
 
 .texto textarea:focus {
@@ -113,7 +125,27 @@ body {
     color: #2dbda5;
 }
 
-.formulario .btn {
-    max-width: 100%;
-    border: 1px solid rgb(4, 84, 122);
+.formulario .botao {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.botao .btn{
+    height: 100%;
+    width: 150px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #3451a0;
+    background: linear-gradient(to left, #222436, #040e1b);
+    border: 2px solid #3451a0;
+}
+
+.botao .btn:hover {
+    color: #2dbda5;
+    border-color: #2dbda5;
+    background: linear-gradient(to right, #222436, #040e1b);
 }
