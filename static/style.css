@@ -1,3 +1,4 @@
+/* Estilizaçao do corpo da pagina */
 html,
 body {
     max-width: 100%;
@@ -12,6 +13,7 @@ body {
     scrollbar-color: #2dbda5 #3451a0;
 }
 
+/* Estilizaçao do container principal */
 .wrapper {
     max-width: 100%;
     height: 615px;
@@ -19,6 +21,7 @@ body {
     border-radius: 10px;
 }
 
+/* Estilizaçao do titulo da pagina */
 .wrapper .titulo {
     max-width: 100%;
     text-align: center;
@@ -30,6 +33,7 @@ body {
     border-bottom: 1px solid #3451a0;
 }
 
+/* Estilizaçao do formulario de entrada */
 .wrapper .formulario {
     display: grid;
     width: 100%;
@@ -38,6 +42,7 @@ body {
     text-align: center;
 }
 
+/* Estilizaçao do layout dos campos de entrada */
 .formulario .campo-input {
     display: flex;
     max-width: 100%;
@@ -50,6 +55,7 @@ body {
     justify-content: center;
 }
 
+/* Estilizaçao das frases atreladas aos campos de entrada */
 .campo label {
     padding: 12px;
     font-size: 20px;
@@ -58,6 +64,7 @@ body {
     color: #3451a0;
 }
 
+/* Estilizaçao dos campos de entrada */
 .campo input[type="text"] {
     width: 250px;
     padding: 12px;
@@ -70,6 +77,7 @@ body {
     background: linear-gradient(to left, #222436, #040e1b);
 }
 
+/* Placeholder e focus dos campos de entrada */
 .campo input::placeholder {
     color: #3451a0;
 }
@@ -83,6 +91,7 @@ body {
     color: #2dbda5;
 }
 
+/* Estilizaçao do layout campos de traduçao e texto a traduzir */
 .formulario .campo-texto {
     display: flex;
     justify-content: space-between;
@@ -97,6 +106,7 @@ body {
     justify-content: center;
 }
 
+/* Estilizaçao dos campos textarea */
 .texto textarea {
     width: 80%;
     max-width: 100%;
@@ -113,6 +123,7 @@ body {
     border: 2px solid #3451a0;
 }
 
+/* Placeholder e focus dos campos textarea */
 .texto textarea:focus {
     border-color: #2dbda5;
 }
@@ -125,13 +136,15 @@ body {
     color: #2dbda5;
 }
 
+/* Estilizaçao do layout do botao traduzir */
 .formulario .botao {
     width: 100%;
     height: 40px;
     margin-top: 20px;
 }
 
-.botao .btn{
+/* Estilizaçao do botao traduzir */
+.botao .btn {
     height: 100%;
     width: 150px;
     font-size: 15px;
