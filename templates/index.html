@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,19 @@
                 <div class="campo-input">
                     <div class="campo">
                         <label for="text">Idioma Padrão:</label>
-                        <input type="text" name="idioma_padrao" placeholder="EX.: en(english)" required> 
+                        <select class="idioma-padrao" name="idioma_padrao">
+                            <option value="portuguese">Português</option>
+                            <option value="english">Inglês</option>
+                            <option value="spanish">Espanhol</option>
+                        </select>
                     </div>
                     <div class="campo">
                         <label for="text">Idioma Traduzido:</label>
-                        <input type="text" name="idioma_traduzido" placeholder="EX.: pt(portuguese)" required>  
+                        <select class="idioma-traduzido" name="idioma_traduzido">
+                            <option value="portuguese">Português</option>
+                            <option value="english">Inglês</option>
+                            <option value="spanish">Espanhol</option>
+                        </select>
                     </div>
                 </div>   
                 <div class="campo-texto">
