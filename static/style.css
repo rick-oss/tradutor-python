@@ -8,7 +8,7 @@ body {
 }
 
 /* Estilizaçao para navegadores que suportam a propriedade padrão */
-* {
+* {   
     scrollbar-width: none;
     scrollbar-color: #2dbda5 #3451a0;
 }
@@ -64,31 +64,34 @@ body {
     color: #3451a0;
 }
 
-/* Estilizaçao dos campos de entrada */
-.campo input[type="text"] {
+/* Estilizaçao dos campos de opçoes de idioma */
+.campo .idioma-padrao,
+.campo .idioma-traduzido {
     width: 250px;
+    height: auto;
     padding: 12px;
     font-size: 15px;
     border-radius: 10px;
     outline: none;
     font-style: italic;
+    cursor: pointer;
     color: #2dbda5;
     border: 2px solid #3451a0;
     background: linear-gradient(to left, #222436, #040e1b);
 }
 
-/* Placeholder e focus dos campos de entrada */
-.campo input::placeholder {
-    color: #3451a0;
-}
-
-.campo input:focus {
+/* hovers do campos de opçoes de idioma */
+.campo .idioma-padrao:hover,
+.campo .idioma-traduzido:hover {
     border-color: #2dbda5;
     background: linear-gradient(to right, #222436, #040e1b);
 }
 
-.campo input:focus::placeholder {
-    color: #2dbda5;
+/* Estilizaçao da tag option */
+.idioma-padrao option,
+.idioma-traduzido option {
+    color: #1a75ff;
+    font-style: normal;
 }
 
 /* Estilizaçao do layout campos de traduçao e texto a traduzir */
